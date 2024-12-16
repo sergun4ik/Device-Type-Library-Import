@@ -47,11 +47,11 @@ class NetBox:
 
     def verify_compatibility(self):
         # nb.version should be the version in the form '3.2'
-        version_split = [int(x) for x in self.netbox.version.split('.')]
+        #version_split = [int(x) for x in self.netbox.version.split('.')]
 
         # Later than 3.2
         # Might want to check for the module-types entry as well?
-        if version_split[0] > 3 or (version_split[0] == 3 and version_split[1] >= 2):
+        #if version_split[0] > 3 or (version_split[0] == 3 and version_split[1] >= 2):
             self.modules = True
 
     def get_manufacturers(self):
